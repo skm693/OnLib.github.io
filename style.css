@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.head{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: flex;
+    padding: 10px 2%;
+    justify-content: space-between;
+    background-color: rgb(147, 149, 255);
+    
+}
+img{
+    width: 30px;
+}
+.left-head{
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+.right-head{
+    display: inline;
+    align-items: center;
+}
+.right-head img{
+    margin-right: 10px;
+    text-align: center;
+}
+.head-name{
+    margin-left: 10px;;
+}
+.menu {
+    float: left;
+    overflow: hidden;
+}
+.dd{
+    cursor: pointer;
+}
+.dd2 {
+    display: none;
+    position: absolute;
+    background-color: rgb(250, 250, 250, 98%);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  .menu:hover .dd2 {
+    display: block;
+}
+  .dd2 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  .dd2 a:hover{
+    background-color: rgb(147, 149, 255);
+}
+
+/* ----------------------------------------------nav search box----------------------------------------------------------------- */
+
+.search-box{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 25px;
+    align-items: center;
+    margin-left: 5px;
+    padding-right: 10px;
+    
+}
+.search-box img{
+    width: 20px;
+    margin-top: 5px;
+}
+.search-input{
+    background-color: transparent;
+    border: 0;
+    width: 350px;
+    font-size: 16px;
+    padding: 5px;
+
+}
+
+input:focus{
+    outline: none;
+}
+.dot-menu{
+    display: inline;
+}
+.im{
+    cursor: pointer;
+}
+.dot{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    max-width: 160px;
+    background-color: rgb(250, 250, 250, 98%);
+    box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, .2);
+}
+.dot-menu:hover .dot{
+    display: block;
+}
+.dot a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dot a:hover{
+    background-color: rgb(147, 149, 255);
+}
+
+.home-page{
+    width: 80%;
+    background-color:  rgb(147, 149, 255);
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
+    font-size: 20px;
+}
+.home-page h1{
+    padding: 30px;
+}
+
+.home-page p{
+    padding: 20px;
+}
+.home-search{
+    width: 70%;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.home-search img{
+    margin-top: 5px;
+}
+.home-input-box-2{
+    width: 85%;
+    font-size: 35px;
+    border: none;
+    background-color: transparent;
+}
+.home-input-box-2:focus{
+    outline: none;
+}
+
+/* ---------------------section------------------- */
+.section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    
+}
+
+.sec{
+    background-color: rgb(147, 149, 255);
+    width: 25%;
+    border-radius: 25px;
+    padding: 2.5vw;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
+    margin-top: 2vw;
+    font-size: .7vw;
+}
+
+/* ----------------------footer------------------------- */
+
+footer{
+    margin-top: 70px;
+    box-shadow: 0px -8px 10px 0px rgba(0, 0, 0, 0.129);
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5vw;
+}
+footer a{
+    margin-top: 5px;
+    padding: 10px;
+}
+footer a:hover{
+    background-color: rgb(147, 149, 255);
+    border-radius: 10px;
+}
+
+/* ----------------------------------------------------book----------------------------------------------------------------------- */
+
+.choose{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    border: 2px solid rgb(147, 149, 255);
+    border-radius: 12px;
+}
+.heading{
+    text-align: center;
+    font-size: 15px;
+    background-color:  rgb(147, 149, 255);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding:10px;
+    
+}
+.stream{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.strm{
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    flex-grow: 1; 
+    width: 25%;
+    
+}
+.strm:hover{
+    background-color: rgb(147, 149, 255, .2);
+}
+
+
+/* --------------------------------------------video------------------------------------------------ */
+
+.video-lec{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    
+}
+.video{
+    width: 90%;
+    height: 40vw;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------c--------------------------------------------------- */
+
+.book-list {
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    border: 2px solid rgb(147, 149, 255);
+    border-radius: 12px;
+}
+
+.book-list-table{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+.table-box{
+    width: 33.33%;
+}
+.table-box-row{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:800px){
+    .sec{
+        background-color: rgb(147, 149, 255);
+        width: 40%;
+        border-radius: 25px;
+        padding: 4vw;
+        text-align: center;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
+        margin-top: 2vw;
+        font-size: 1.6vw;
+    }
+}
+@media (max-width:650px) {
+    .search-input {
+        width: 100px;
+    }
+    .home-input-box-2{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .home-search img{
+        width: 20px;
+    }
+    .heading{
+        font-size: 2vw;
+    }
+    .book-list-table{
+        font-size: 2vw;
+    }
+    .section{
+        font-size: 1.5vw;
+    }
+
+}
+@media( max-width:550px){
+    
+    .strm{
+        width: 33.33%;
+    }
+    .book-list-table{
+        font-size: 2.5vw;
+    }
+}
+
+@media(max-width:460px){
+    .home-input-box-2{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .home-search img{
+        width: 15px;
+    }
+    .strm{
+        width: 50%;
+    } 
+    .book-list-table{
+        font-size: 3vw;
+    }
+
+}
+@media(max-width:380px){
+    .search-input {
+        width: 50px;
+    }
+    .home-input-box-2{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .home-search img{
+        width: 10px;
+    }
+    
+}
